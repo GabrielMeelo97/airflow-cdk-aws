@@ -1,0 +1,757 @@
+{
+ "Resources": {
+  "mwaadags537631EF": {
+   "Type": "AWS::S3::Bucket",
+   "Properties": {
+    "BucketName": "airflow-cdk-demo-09349084459",
+    "PublicAccessBlockConfiguration": {
+     "BlockPublicAcls": true,
+     "BlockPublicPolicy": true,
+     "IgnorePublicAcls": true,
+     "RestrictPublicBuckets": true
+    },
+    "Tags": [
+     {
+      "Key": "aws-cdk:cr-owned:dags:54c88a29",
+      "Value": "true"
+     },
+     {
+      "Key": "env",
+      "Value": "mwaa-cdk-demo3434"
+     },
+     {
+      "Key": "service",
+      "Value": "MWAA Apache AirFlow"
+     }
+    ],
+    "VersioningConfiguration": {
+     "Status": "Enabled"
+    }
+   },
+   "UpdateReplacePolicy": "Retain",
+   "DeletionPolicy": "Retain",
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/mwaa-dags/Resource"
+   }
+  },
+  "DeployDAGAwsCliLayer6BE262D5": {
+   "Type": "AWS::Lambda::LayerVersion",
+   "Properties": {
+    "Content": {
+     "S3Bucket": {
+      "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207"
+     },
+     "S3Key": {
+      "Fn::Join": [
+       "",
+       [
+        {
+         "Fn::Select": [
+          0,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Fn::Select": [
+          1,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      ]
+     }
+    },
+    "Description": "/opt/awscli/aws"
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/DeployDAG/AwsCliLayer/Resource",
+    "aws:asset:path": "asset.e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c.zip",
+    "aws:asset:is-bundled": false,
+    "aws:asset:property": "Content"
+   }
+  },
+  "DeployDAGCustomResource1EAEB4D8": {
+   "Type": "Custom::CDKBucketDeployment",
+   "Properties": {
+    "ServiceToken": {
+     "Fn::GetAtt": [
+      "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+      "Arn"
+     ]
+    },
+    "SourceBucketNames": [
+     {
+      "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+     }
+    ],
+    "SourceObjectKeys": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        {
+         "Fn::Select": [
+          0,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Fn::Select": [
+          1,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      ]
+     }
+    ],
+    "DestinationBucketName": {
+     "Ref": "mwaadags537631EF"
+    },
+    "DestinationBucketKeyPrefix": "dags",
+    "RetainOnDelete": false,
+    "Prune": false
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/DeployDAG/CustomResource/Default"
+   }
+  },
+  "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "lambda.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "ManagedPolicyArns": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "arn:",
+        {
+         "Ref": "AWS::Partition"
+        },
+        ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+       ]
+      ]
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource"
+   }
+  },
+  "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": [
+        "s3:GetObject*",
+        "s3:GetBucket*",
+        "s3:List*"
+       ],
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::Join": [
+          "",
+          [
+           "arn:",
+           {
+            "Ref": "AWS::Partition"
+           },
+           ":s3:::",
+           {
+            "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+           }
+          ]
+         ]
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           "arn:",
+           {
+            "Ref": "AWS::Partition"
+           },
+           ":s3:::",
+           {
+            "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+           },
+           "/*"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "Action": [
+        "s3:GetObject*",
+        "s3:GetBucket*",
+        "s3:List*",
+        "s3:DeleteObject*",
+        "s3:PutObject*",
+        "s3:Abort*"
+       ],
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::GetAtt": [
+          "mwaadags537631EF",
+          "Arn"
+         ]
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Fn::GetAtt": [
+             "mwaadags537631EF",
+             "Arn"
+            ]
+           },
+           "/*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+    "Roles": [
+     {
+      "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Code": {
+     "S3Bucket": {
+      "Ref": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7"
+     },
+     "S3Key": {
+      "Fn::Join": [
+       "",
+       [
+        {
+         "Fn::Select": [
+          0,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Fn::Select": [
+          1,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      ]
+     }
+    },
+    "Role": {
+     "Fn::GetAtt": [
+      "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+      "Arn"
+     ]
+    },
+    "Handler": "index.handler",
+    "Layers": [
+     {
+      "Ref": "DeployDAGAwsCliLayer6BE262D5"
+     }
+    ],
+    "Runtime": "python3.7",
+    "Timeout": 900
+   },
+   "DependsOn": [
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+    "aws:asset:path": "asset.f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+    "aws:asset:is-bundled": false,
+    "aws:asset:property": "Code"
+   }
+  },
+  "mwaaservicerole26CF19B9": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "airflow.amazonaws.com"
+       }
+      },
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "airflow-env.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "Path": "/service-role/",
+    "Policies": [
+     {
+      "PolicyDocument": {
+       "Statement": [
+        {
+         "Action": "airflow:PublishMetrics",
+         "Effect": "Allow",
+         "Resource": "arn:aws:airflow:eu-central-1:754398815384:environment/mwaa-cdk-demo3434"
+        },
+        {
+         "Action": "s3:ListAllMyBuckets",
+         "Effect": "Deny",
+         "Resource": [
+          {
+           "Fn::Join": [
+            "",
+            [
+             {
+              "Fn::GetAtt": [
+               "mwaadags537631EF",
+               "Arn"
+              ]
+             },
+             "/*"
+            ]
+           ]
+          },
+          {
+           "Fn::GetAtt": [
+            "mwaadags537631EF",
+            "Arn"
+           ]
+          }
+         ]
+        },
+        {
+         "Action": "s3:*",
+         "Effect": "Allow",
+         "Resource": [
+          {
+           "Fn::Join": [
+            "",
+            [
+             {
+              "Fn::GetAtt": [
+               "mwaadags537631EF",
+               "Arn"
+              ]
+             },
+             "/*"
+            ]
+           ]
+          },
+          {
+           "Fn::GetAtt": [
+            "mwaadags537631EF",
+            "Arn"
+           ]
+          }
+         ]
+        },
+        {
+         "Action": [
+          "logs:CreateLogStream",
+          "logs:CreateLogGroup",
+          "logs:PutLogEvents",
+          "logs:GetLogEvents",
+          "logs:GetLogRecord",
+          "logs:GetLogGroupFields",
+          "logs:GetQueryResults",
+          "logs:DescribeLogGroups"
+         ],
+         "Effect": "Allow",
+         "Resource": "arn:aws:logs:eu-central-1:754398815384:log-group:airflow-mwaa-cdk-demo3434-*"
+        },
+        {
+         "Action": "logs:DescribeLogGroups",
+         "Effect": "Allow",
+         "Resource": "*"
+        },
+        {
+         "Action": [
+          "sqs:ChangeMessageVisibility",
+          "sqs:DeleteMessage",
+          "sqs:GetQueueAttributes",
+          "sqs:GetQueueUrl",
+          "sqs:ReceiveMessage",
+          "sqs:SendMessage"
+         ],
+         "Effect": "Allow",
+         "Resource": "arn:aws:sqs:eu-central-1:*:airflow-celery-*"
+        },
+        {
+         "Action": [
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:GenerateDataKey*",
+          "kms:Encrypt",
+          "kms:PutKeyPolicy"
+         ],
+         "Condition": {
+          "StringEquals": {
+           "kms:ViaService": [
+            "sqs.eu-central-1.amazonaws.com",
+            "s3.eu-central-1.amazonaws.com"
+           ]
+          }
+         },
+         "Effect": "Allow",
+         "Resource": "*"
+        }
+       ],
+       "Version": "2012-10-17"
+      },
+      "PolicyName": "CDKmwaaPolicyDocument"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/mwaa-service-role/Resource"
+   }
+  },
+  "mwaasg460AC42F": {
+   "Type": "AWS::EC2::SecurityGroup",
+   "Properties": {
+    "GroupDescription": "MWAA-Environment/mwaa-sg",
+    "GroupName": "mwaa-sg",
+    "SecurityGroupEgress": [
+     {
+      "CidrIp": "0.0.0.0/0",
+      "Description": "Allow all outbound traffic by default",
+      "IpProtocol": "-1"
+     }
+    ],
+    "VpcId": {
+     "Fn::ImportValue": "MWAA-Backend:ExportsOutputRefMWAAApacheAirflowVPCB5BDED9D45FBF85F"
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/mwaa-sg/Resource"
+   }
+  },
+  "mwaasgfromMWAAEnvironmentmwaasg58F76CDFALLTRAFFICC3A56196": {
+   "Type": "AWS::EC2::SecurityGroupIngress",
+   "Properties": {
+    "IpProtocol": "-1",
+    "Description": "MWAA",
+    "GroupId": {
+     "Fn::GetAtt": [
+      "mwaasg460AC42F",
+      "GroupId"
+     ]
+    },
+    "SourceSecurityGroupId": {
+     "Fn::GetAtt": [
+      "mwaasg460AC42F",
+      "GroupId"
+     ]
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/mwaa-sg/from MWAAEnvironmentmwaasg58F76CDF:ALL TRAFFIC"
+   }
+  },
+  "mwaacdkdemo3434Key0DD00138": {
+   "Type": "AWS::KMS::Key",
+   "Properties": {
+    "KeyPolicy": {
+     "Statement": [
+      {
+       "Action": [
+        "kms:Create*",
+        "kms:Describe*",
+        "kms:Enable*",
+        "kms:List*",
+        "kms:Put*",
+        "kms:Decrypt*",
+        "kms:Update*",
+        "kms:Revoke*",
+        "kms:Disable*",
+        "kms:Get*",
+        "kms:Delete*",
+        "kms:ScheduleKeyDeletion",
+        "kms:GenerateDataKey*",
+        "kms:CancelKeyDeletion"
+       ],
+       "Effect": "Allow",
+       "Principal": {
+        "AWS": {
+         "Fn::Join": [
+          "",
+          [
+           "arn:",
+           {
+            "Ref": "AWS::Partition"
+           },
+           ":iam::754398815384:root"
+          ]
+         ]
+        }
+       },
+       "Resource": "*"
+      },
+      {
+       "Action": [
+        "kms:Decrypt*",
+        "kms:Describe*",
+        "kms:GenerateDataKey*",
+        "kms:Encrypt*",
+        "kms:ReEncrypt*",
+        "kms:PutKeyPolicy"
+       ],
+       "Condition": {
+        "ArnLike": {
+         "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:eu-central-1:754398815384:*"
+        }
+       },
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "logs.eu-central-1.amazonaws.com"
+       },
+       "Resource": "*"
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "EnableKeyRotation": true
+   },
+   "UpdateReplacePolicy": "Retain",
+   "DeletionPolicy": "Retain",
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/mwaa-cdk-demo3434Key/Resource"
+   }
+  },
+  "mwaacdkdemo3434KeyAlias83073F87": {
+   "Type": "AWS::KMS::Alias",
+   "Properties": {
+    "AliasName": "alias/mwaa-cdk-demo3434Key",
+    "TargetKeyId": {
+     "Fn::GetAtt": [
+      "mwaacdkdemo3434Key0DD00138",
+      "Arn"
+     ]
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/mwaa-cdk-demo3434Key/Alias/Resource"
+   }
+  },
+  "airflowtestenvironment": {
+   "Type": "AWS::MWAA::Environment",
+   "Properties": {
+    "Name": "mwaa-cdk-demo3434",
+    "AirflowConfigurationOptions": {
+     "core.default_timezone": "utc",
+     "core.load_default_connections": false,
+     "core.load_examples": false,
+     "webserver.dag_default_view": "tree",
+     "webserver.dag_orientation": "TB"
+    },
+    "AirflowVersion": "2.0.2",
+    "DagS3Path": "dags",
+    "EnvironmentClass": "mw1.small",
+    "ExecutionRoleArn": {
+     "Fn::GetAtt": [
+      "mwaaservicerole26CF19B9",
+      "Arn"
+     ]
+    },
+    "KmsKey": {
+     "Fn::GetAtt": [
+      "mwaacdkdemo3434Key0DD00138",
+      "Arn"
+     ]
+    },
+    "LoggingConfiguration": {
+     "DagProcessingLogs": {
+      "Enabled": true,
+      "LogLevel": "INFO"
+     },
+     "SchedulerLogs": {
+      "Enabled": true,
+      "LogLevel": "INFO"
+     },
+     "TaskLogs": {
+      "Enabled": true,
+      "LogLevel": "INFO"
+     },
+     "WebserverLogs": {
+      "Enabled": true,
+      "LogLevel": "INFO"
+     },
+     "WorkerLogs": {
+      "Enabled": true,
+      "LogLevel": "INFO"
+     }
+    },
+    "MaxWorkers": 5,
+    "NetworkConfiguration": {
+     "SecurityGroupIds": [
+      {
+       "Fn::GetAtt": [
+        "mwaasg460AC42F",
+        "GroupId"
+       ]
+      }
+     ],
+     "SubnetIds": [
+      {
+       "Fn::ImportValue": "MWAA-Backend:ExportsOutputRefMWAAApacheAirflowVPCprivateSubnet1Subnet41EDA5200DFEC7E0"
+      },
+      {
+       "Fn::ImportValue": "MWAA-Backend:ExportsOutputRefMWAAApacheAirflowVPCprivateSubnet2SubnetF8BEBBAC6108F015"
+      }
+     ]
+    },
+    "SourceBucketArn": {
+     "Fn::GetAtt": [
+      "mwaadags537631EF",
+      "Arn"
+     ]
+    },
+    "Tags": {
+     "env": "mwaa-cdk-demo3434",
+     "service": "MWAA Apache AirFlow"
+    },
+    "WebserverAccessMode": "PUBLIC_ONLY"
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/airflow-test-environment"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/32Qy04DMQxFv6X7jMtQgVjSlocQSFStxD5kTAmTRxU7VKMo/04yQ8uO1T2+tixft9BeXUM7u5VHalTXz5PyASHtWKpeLImQC+6124t1JPZ2i+RjUCjWH+6PvSMOUXF1NzJIi4yhFq+RD5GzqOsTLSCtoupxnPulSVaSMAtaNKnDg/GDRccwte7OhpD1HoLxrCyMtO+dhFR2vcgBwxsG0t6JXbnWIHv3EJ3i6pyhjJ44Cy0tpK03U5aqG2+0GsYQI2WB6rI8A1UMmofH4OOhdv83ntw+IFEWvSVIzzgurLI0WlItRsjCHqWEUt67bx28qxFPqRpTEzXlbcpoWB5pbfQYMovNwJ/ezRdwA+3F7Iu0bkJ0rC3CdtIfpPXX2NUBAAA="
+   },
+   "Metadata": {
+    "aws:cdk:path": "MWAA-Environment/CDKMetadata/Default"
+   }
+  }
+ },
+ "Parameters": {
+  "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207": {
+   "Type": "String",
+   "Description": "S3 bucket for asset \"e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c\""
+  },
+  "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA": {
+   "Type": "String",
+   "Description": "S3 key for asset version \"e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c\""
+  },
+  "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cArtifactHash07A347C7": {
+   "Type": "String",
+   "Description": "Artifact hash for asset \"e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c\""
+  },
+  "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7": {
+   "Type": "String",
+   "Description": "S3 bucket for asset \"f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da\""
+  },
+  "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D": {
+   "Type": "String",
+   "Description": "S3 key for asset version \"f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da\""
+  },
+  "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8": {
+   "Type": "String",
+   "Description": "Artifact hash for asset \"f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da\""
+  },
+  "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB": {
+   "Type": "String",
+   "Description": "S3 bucket for asset \"91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560\""
+  },
+  "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A": {
+   "Type": "String",
+   "Description": "S3 key for asset version \"91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560\""
+  },
+  "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560ArtifactHashBDF2DF1B": {
+   "Type": "String",
+   "Description": "Artifact hash for asset \"91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560\""
+  }
+ },
+ "Outputs": {
+  "MWAASecurityGroup": {
+   "Description": "Security Group name used by MWAA",
+   "Value": {
+    "Fn::GetAtt": [
+     "mwaasg460AC42F",
+     "GroupId"
+    ]
+   }
+  }
+ }
+}

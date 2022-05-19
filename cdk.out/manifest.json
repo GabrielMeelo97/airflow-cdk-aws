@@ -1,0 +1,1254 @@
+{
+  "version": "18.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "MWAA-Backend": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://754398815384/eu-central-1",
+      "properties": {
+        "templateFile": "MWAA-Backend.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCB5BDED9D",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:407:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet1Subnet223E228F",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:779:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:963:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:681:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet1RouteTableA44C6183",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:795:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:963:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:681:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet1RouteTableAssociationB2BBE376",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:800:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:963:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:681:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet1DefaultRoute799886DC",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:836:23)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:445:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:32)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet1EIPBB6AFD3B",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:995:102)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/nat.js:107:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:629:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:450:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet1NATGateway291F19CF",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:993:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/nat.js:107:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:629:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:450:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet2Subnet2D19CFFB",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:779:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:963:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:681:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet2RouteTable684254F3",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:795:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:963:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:681:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet2RouteTableAssociation7F0D84D7",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:800:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:963:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:681:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCpublicSubnet2DefaultRoute7911E20F",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:836:23)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:445:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:32)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet1Subnet41EDA520",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:779:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:1010:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:686:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet1RouteTable7F352F75",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:795:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:1010:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:686:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet1RouteTableAssociation9898A678",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:800:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:1010:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:686:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet1DefaultRoute96A388AA",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:886:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/nat.js:119:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/nat.js:113:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:629:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:450:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet2SubnetF8BEBBAC",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:779:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:1010:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:686:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet2RouteTable09D1C6AA",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:795:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:1010:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:686:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet2RouteTableAssociation05F725CF",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:800:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:1010:9)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:686:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:655:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:646:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:433:14)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCprivateSubnet2DefaultRouteD0152ADD",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:886:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/nat.js:119:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/nat.js:113:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:629:18)",
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:450:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCIGWD7367106",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:437:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/MWAA-ApacheAirflow-VPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAAApacheAirflowVPCVPCGW6EB617E6",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:440:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/VPCId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCId",
+            "trace": [
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stage.js:105:41)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/Exports/Output{\"Ref\":\"MWAAApacheAirflowVPCB5BDED9D\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefMWAAApacheAirflowVPCB5BDED9D45FBF85F",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:726:13)",
+              "createImportValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stage.js:105:41)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/Exports/Output{\"Ref\":\"MWAAApacheAirflowVPCprivateSubnet1Subnet41EDA520\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefMWAAApacheAirflowVPCprivateSubnet1Subnet41EDA5200DFEC7E0",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:726:13)",
+              "createImportValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stage.js:105:41)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Backend/Exports/Output{\"Ref\":\"MWAAApacheAirflowVPCprivateSubnet2SubnetF8BEBBAC\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefMWAAApacheAirflowVPCprivateSubnet2SubnetF8BEBBAC6108F015",
+            "trace": [
+              "Stack.exportValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:726:13)",
+              "createImportValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:138:39)",
+              "resolveValue (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:84:12)",
+              "Object.resolveReferences (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/refs.js:25:30)",
+              "Object.prepareApp (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/prepare-app.js:30:12)",
+              "Object.synthesize (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:21:19)",
+              "App.synth (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stage.js:105:41)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "MWAA-Backend"
+    },
+    "MWAA-Environment": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://754398815384/eu-central-1",
+      "properties": {
+        "templateFile": "MWAA-Environment.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "MWAA-Backend"
+      ],
+      "metadata": {
+        "/MWAA-Environment": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c.zip",
+              "id": "e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c",
+              "packaging": "file",
+              "sourceHash": "e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c",
+              "s3BucketParameter": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207",
+              "s3KeyParameter": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA",
+              "artifactHashParameter": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cArtifactHash07A347C7"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new LayerVersion (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/layers.js:51:33)",
+              "new AwsCliLayer (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:82:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "id": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "packaging": "zip",
+              "sourceHash": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "s3BucketParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7",
+              "s3KeyParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D",
+              "artifactHashParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new Function (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/function.js:109:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:79:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560",
+              "id": "91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560",
+              "packaging": "zip",
+              "sourceHash": "91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560",
+              "s3BucketParameter": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB",
+              "s3KeyParameter": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A",
+              "artifactHashParameter": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560ArtifactHashBDF2DF1B"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "Object.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:39)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-dags/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mwaadags537631EF",
+            "trace": [
+              "new Bucket (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3/lib/bucket.js:670:26)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/DeployDAG/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeployDAGAwsCliLayer6BE262D5",
+            "trace": [
+              "new LayerVersion (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/layers.js:58:26)",
+              "new AwsCliLayer (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:82:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/DeployDAG/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeployDAGCustomResource1EAEB4D8",
+            "trace": [
+              "new CustomResource (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/custom-resource.js:50:25)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:115:19)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new LayerVersion (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/layers.js:51:33)",
+              "new AwsCliLayer (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:82:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new LayerVersion (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/layers.js:51:33)",
+              "new AwsCliLayer (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:82:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cArtifactHash07A347C7",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new LayerVersion (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/layers.js:51:33)",
+              "new AwsCliLayer (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:82:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new Function (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/function.js:109:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:79:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new Function (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/function.js:109:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:79:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/code.js:278:26)",
+              "new Function (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/function.js:109:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:79:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "Object.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:39)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "Object.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:39)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560ArtifactHashBDF2DF1B",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack.js:475:33)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:47:44)",
+              "Object.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:39)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-iam/lib/role.js:58:22)",
+              "new Function (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/function.js:91:35)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:79:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-iam/lib/policy.js:58:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-iam/lib/role.js:224:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-iam/lib/grant.js:103:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-iam/lib/grant.js:51:30)",
+              "Import.grant (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3/lib/bucket.js:490:31)",
+              "Import.grantRead (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3/lib/bucket.js:305:21)",
+              "Asset.grantRead (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:100:21)",
+              "Object.bind (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:69:23)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:102:39)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/function.js:167:26)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:79:25)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-service-role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mwaaservicerole26CF19B9",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-iam/lib/role.js:58:22)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-sg": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Ignoring Egress rule since 'allowAllOutbound' is set to true; To add customized rules, set allowAllOutbound=false on the SecurityGroup",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/annotations.js:86:42)",
+              "Annotations.addWarning (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/annotations.js:32:14)",
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:369:45)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:160:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:289:13)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:158:38",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:289:13)",
+              "Connections.allowInternally (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:157:30)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mwaasg460AC42F",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:202:30)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-sg/from MWAAEnvironmentmwaasg58F76CDF:ALL TRAFFIC": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mwaasgfromMWAAEnvironmentmwaasg58F76CDFALLTRAFFICC3A56196",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:42:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:341:19)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:159:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:289:13)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:158:38",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:289:13)",
+              "Connections.allowInternally (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-ec2/lib/connections.js:157:30)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-cdk-demo3434Key/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mwaacdkdemo3434Key0DD00138",
+            "trace": [
+              "new Key (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-kms/lib/key.js:304:26)",
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/mwaa-cdk-demo3434Key/Alias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mwaacdkdemo3434KeyAlias83073F87",
+            "trace": [
+              "new Alias (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-kms/lib/alias.js:83:26)",
+              "Key.addAlias (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/aws-kms/lib/key.js:30:23)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/airflow-test-environment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "airflowtestenvironment",
+            "trace": [
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/MWAASecurityGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MWAASecurityGroup",
+            "trace": [
+              "/tmp/tmppdd75lva/lib/program.js:8420:58",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "Kernel._create (/tmp/tmppdd75lva/lib/program.js:8420:34)",
+              "Kernel.create (/tmp/tmppdd75lva/lib/program.js:8161:29)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/MWAA-Environment/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-AhIauE/node_modules/@aws-cdk/core/lib/stage.js:105:41)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:134",
+              "Kernel._wrapSandboxCode (/tmp/tmppdd75lva/lib/program.js:8848:24)",
+              "/tmp/tmppdd75lva/lib/program.js:8236:107",
+              "Kernel._ensureSync (/tmp/tmppdd75lva/lib/program.js:8829:28)",
+              "Kernel.invoke (/tmp/tmppdd75lva/lib/program.js:8236:34)",
+              "KernelHost.processRequest (/tmp/tmppdd75lva/lib/program.js:9769:36)",
+              "KernelHost.run (/tmp/tmppdd75lva/lib/program.js:9732:22)",
+              "Immediate._onImmediate (/tmp/tmppdd75lva/lib/program.js:9733:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "MWAA-Environment"
+    }
+  }
+}
