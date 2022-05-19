@@ -4,7 +4,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 
-def handler(assunto,data_inicial,data_fim):
+def main(assunto,data_inicial,data_fim):
     token_databricks = env['tokendatabricks']
     ingestor(n_tweets = 20,tema = assunto,start_date=data_inicial,end_date=data_fim)
     job = executa_job(8725524865533,token_databricks)
