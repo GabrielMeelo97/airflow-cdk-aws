@@ -56,8 +56,8 @@ def save_bucket(json_arquivo,aws_account,aws_key):
     return 'Arquivo inserido'
 
 def ingestor(n_tweets,tema,start_date,end_date):
-    bearer_token = env['twittertoken']
-    aws_account = env['awsid']
+    bearer_token = env.get('twittertoken')
+    aws_account = env.get('awsid')
     aws_key = env['awskey']
     token = create_header(bearer_token)
     url_base = create_url(tema,start_date,end_date)
