@@ -9,7 +9,7 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "@aws-cdk/core.Construct",
-          "version": "1.156.1"
+          "version": "1.159.0"
         }
       },
       "MWAA-Backend": {
@@ -40,7 +40,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.CfnVPC",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "publicSubnet1": {
@@ -56,7 +56,7 @@
                         "vpcId": {
                           "Ref": "MWAAApacheAirflowVPCB5BDED9D"
                         },
-                        "availabilityZone": "eu-central-1a",
+                        "availabilityZone": "us-east-1a",
                         "cidrBlock": "10.192.0.0/24",
                         "mapPublicIpOnLaunch": true,
                         "tags": [
@@ -77,7 +77,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "Acl": {
@@ -85,7 +85,7 @@
                     "path": "MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet1/Acl",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTable": {
@@ -107,7 +107,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTableAssociation": {
@@ -126,7 +126,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "DefaultRoute": {
@@ -146,7 +146,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "EIP": {
@@ -166,7 +166,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnEIP",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "NATGateway": {
@@ -194,13 +194,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnNatGateway",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.PublicSubnet",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "publicSubnet2": {
@@ -216,7 +216,7 @@
                         "vpcId": {
                           "Ref": "MWAAApacheAirflowVPCB5BDED9D"
                         },
-                        "availabilityZone": "eu-central-1b",
+                        "availabilityZone": "us-east-1b",
                         "cidrBlock": "10.192.1.0/24",
                         "mapPublicIpOnLaunch": true,
                         "tags": [
@@ -237,7 +237,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "Acl": {
@@ -245,7 +245,7 @@
                     "path": "MWAA-Backend/MWAA-ApacheAirflow-VPC/publicSubnet2/Acl",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTable": {
@@ -267,7 +267,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTableAssociation": {
@@ -286,7 +286,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "DefaultRoute": {
@@ -306,13 +306,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.PublicSubnet",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "privateSubnet1": {
@@ -328,7 +328,7 @@
                         "vpcId": {
                           "Ref": "MWAAApacheAirflowVPCB5BDED9D"
                         },
-                        "availabilityZone": "eu-central-1a",
+                        "availabilityZone": "us-east-1a",
                         "cidrBlock": "10.192.2.0/24",
                         "mapPublicIpOnLaunch": false,
                         "tags": [
@@ -349,7 +349,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "Acl": {
@@ -357,7 +357,7 @@
                     "path": "MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet1/Acl",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTable": {
@@ -379,7 +379,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTableAssociation": {
@@ -398,7 +398,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "DefaultRoute": {
@@ -418,13 +418,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.PrivateSubnet",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "privateSubnet2": {
@@ -440,7 +440,7 @@
                         "vpcId": {
                           "Ref": "MWAAApacheAirflowVPCB5BDED9D"
                         },
-                        "availabilityZone": "eu-central-1b",
+                        "availabilityZone": "us-east-1b",
                         "cidrBlock": "10.192.3.0/24",
                         "mapPublicIpOnLaunch": false,
                         "tags": [
@@ -461,7 +461,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnet",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "Acl": {
@@ -469,7 +469,7 @@
                     "path": "MWAA-Backend/MWAA-ApacheAirflow-VPC/privateSubnet2/Acl",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTable": {
@@ -491,7 +491,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRouteTable",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "RouteTableAssociation": {
@@ -510,7 +510,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnSubnetRouteTableAssociation",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "DefaultRoute": {
@@ -530,13 +530,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-ec2.CfnRoute",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.PrivateSubnet",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "IGW": {
@@ -555,7 +555,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.CfnInternetGateway",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "VPCGW": {
@@ -574,13 +574,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.CfnVPCGatewayAttachment",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-ec2.Vpc",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "VPCId": {
@@ -588,7 +588,7 @@
             "path": "MWAA-Backend/VPCId",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "CDKMetadata": {
@@ -600,13 +600,13 @@
                 "path": "MWAA-Backend/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "Exports": {
@@ -618,7 +618,7 @@
                 "path": "MWAA-Backend/Exports/Output{\"Ref\":\"MWAAApacheAirflowVPCB5BDED9D\"}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "Output{\"Ref\":\"MWAAApacheAirflowVPCprivateSubnet1Subnet41EDA520\"}": {
@@ -626,7 +626,7 @@
                 "path": "MWAA-Backend/Exports/Output{\"Ref\":\"MWAAApacheAirflowVPCprivateSubnet1Subnet41EDA520\"}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "Output{\"Ref\":\"MWAAApacheAirflowVPCprivateSubnet2SubnetF8BEBBAC\"}": {
@@ -634,19 +634,19 @@
                 "path": "MWAA-Backend/Exports/Output{\"Ref\":\"MWAAApacheAirflowVPCprivateSubnet2SubnetF8BEBBAC\"}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.156.1"
+          "version": "1.159.0"
         }
       },
       "MWAA-Environment": {
@@ -663,7 +663,7 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
-                    "bucketName": "airflow-cdk-demo-09349084459",
+                    "bucketName": "airflow-cdk-dags-gabriel",
                     "publicAccessBlockConfiguration": {
                       "blockPublicAcls": true,
                       "blockPublicPolicy": true,
@@ -677,7 +677,7 @@
                       },
                       {
                         "key": "env",
-                        "value": "mwaa-cdk-demo3434"
+                        "value": "mwaa-cdk-prod-1"
                       },
                       {
                         "key": "service",
@@ -691,13 +691,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3.CfnBucket",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-s3.Bucket",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "DeployDAG": {
@@ -717,7 +717,7 @@
                         "path": "MWAA-Environment/DeployDAG/AwsCliLayer/Code/Stage",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.AssetStaging",
-                          "version": "1.156.1"
+                          "version": "1.159.0"
                         }
                       },
                       "AssetBucket": {
@@ -725,13 +725,13 @@
                         "path": "MWAA-Environment/DeployDAG/AwsCliLayer/Code/AssetBucket",
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-s3.BucketBase",
-                          "version": "1.156.1"
+                          "version": "1.159.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "Resource": {
@@ -742,7 +742,7 @@
                       "aws:cdk:cloudformation:props": {
                         "content": {
                           "s3Bucket": {
-                            "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207"
+                            "Ref": "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3Bucket8513C222"
                           },
                           "s3Key": {
                             "Fn::Join": [
@@ -755,7 +755,7 @@
                                       "Fn::Split": [
                                         "||",
                                         {
-                                          "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA"
+                                          "Ref": "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3VersionKeyDF2A43EA"
                                         }
                                       ]
                                     }
@@ -768,7 +768,7 @@
                                       "Fn::Split": [
                                         "||",
                                         {
-                                          "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA"
+                                          "Ref": "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3VersionKeyDF2A43EA"
                                         }
                                       ]
                                     }
@@ -783,13 +783,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-lambda.CfnLayerVersion",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/lambda-layer-awscli.AwsCliLayer",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "CustomResourceHandler": {
@@ -797,7 +797,7 @@
                 "path": "MWAA-Environment/DeployDAG/CustomResourceHandler",
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.SingletonFunction",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "Asset1": {
@@ -809,7 +809,7 @@
                     "path": "MWAA-Environment/DeployDAG/Asset1/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "AssetBucket": {
@@ -817,13 +817,13 @@
                     "path": "MWAA-Environment/DeployDAG/Asset1/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "CustomResource": {
@@ -835,57 +835,57 @@
                     "path": "MWAA-Environment/DeployDAG/CustomResource/Default",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnResource",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CustomResource",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-s3-deployment.BucketDeployment",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "AssetParameters": {
             "id": "AssetParameters",
             "path": "MWAA-Environment/AssetParameters",
             "children": {
-              "e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c": {
-                "id": "e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c",
-                "path": "MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c",
+              "02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557": {
+                "id": "02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557",
+                "path": "MWAA-Environment/AssetParameters/02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c/S3Bucket",
+                    "path": "MWAA-Environment/AssetParameters/02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c/S3VersionKey",
+                    "path": "MWAA-Environment/AssetParameters/02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "MWAA-Environment/AssetParameters/e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c/ArtifactHash",
+                    "path": "MWAA-Environment/AssetParameters/02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da": {
@@ -897,7 +897,7 @@
                     "path": "MWAA-Environment/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "S3VersionKey": {
@@ -905,7 +905,7 @@
                     "path": "MWAA-Environment/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "ArtifactHash": {
@@ -913,53 +913,53 @@
                     "path": "MWAA-Environment/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
-              "91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560": {
-                "id": "91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560",
-                "path": "MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560",
+              "8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83": {
+                "id": "8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83",
+                "path": "MWAA-Environment/AssetParameters/8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560/S3Bucket",
+                    "path": "MWAA-Environment/AssetParameters/8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560/S3VersionKey",
+                    "path": "MWAA-Environment/AssetParameters/8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "MWAA-Environment/AssetParameters/91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560/ArtifactHash",
+                    "path": "MWAA-Environment/AssetParameters/8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": {
@@ -1006,7 +1006,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1039,7 +1039,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+                                            "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3BucketC240AE28"
                                           }
                                         ]
                                       ]
@@ -1054,7 +1054,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+                                            "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3BucketC240AE28"
                                           },
                                           "/*"
                                         ]
@@ -1108,19 +1108,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.156.1"
+                          "version": "1.159.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "Code": {
@@ -1132,7 +1132,7 @@
                     "path": "MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   },
                   "AssetBucket": {
@@ -1140,13 +1140,13 @@
                     "path": "MWAA-Environment/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "Resource": {
@@ -1211,13 +1211,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda.Function",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "mwaa-service-role": {
@@ -1258,7 +1258,7 @@
                             {
                               "Action": "airflow:PublishMetrics",
                               "Effect": "Allow",
-                              "Resource": "arn:aws:airflow:eu-central-1:754398815384:environment/mwaa-cdk-demo3434"
+                              "Resource": "arn:aws:airflow:us-east-1:850674240322:environment/mwaa-cdk-prod-1"
                             },
                             {
                               "Action": "s3:ListAllMyBuckets",
@@ -1324,7 +1324,7 @@
                                 "logs:DescribeLogGroups"
                               ],
                               "Effect": "Allow",
-                              "Resource": "arn:aws:logs:eu-central-1:754398815384:log-group:airflow-mwaa-cdk-demo3434-*"
+                              "Resource": "arn:aws:logs:us-east-1:850674240322:log-group:airflow-mwaa-cdk-prod-1-*"
                             },
                             {
                               "Action": "logs:DescribeLogGroups",
@@ -1341,7 +1341,7 @@
                                 "sqs:SendMessage"
                               ],
                               "Effect": "Allow",
-                              "Resource": "arn:aws:sqs:eu-central-1:*:airflow-celery-*"
+                              "Resource": "arn:aws:sqs:us-east-1:*:airflow-celery-*"
                             },
                             {
                               "Action": [
@@ -1354,8 +1354,8 @@
                               "Condition": {
                                 "StringEquals": {
                                   "kms:ViaService": [
-                                    "sqs.eu-central-1.amazonaws.com",
-                                    "s3.eu-central-1.amazonaws.com"
+                                    "sqs.us-east-1.amazonaws.com",
+                                    "s3.us-east-1.amazonaws.com"
                                   ]
                                 }
                               },
@@ -1371,13 +1371,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.CfnRole",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-iam.Role",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "mwaa-sg": {
@@ -1406,7 +1406,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.CfnSecurityGroup",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "from MWAAEnvironmentmwaasg58F76CDF:ALL TRAFFIC": {
@@ -1433,22 +1433,22 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-ec2.CfnSecurityGroupIngress",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-ec2.SecurityGroup",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
-          "mwaa-cdk-demo3434Key": {
-            "id": "mwaa-cdk-demo3434Key",
-            "path": "MWAA-Environment/mwaa-cdk-demo3434Key",
+          "mwaa-cdk-prod-1Key": {
+            "id": "mwaa-cdk-prod-1Key",
+            "path": "MWAA-Environment/mwaa-cdk-prod-1Key",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "MWAA-Environment/mwaa-cdk-demo3434Key/Resource",
+                "path": "MWAA-Environment/mwaa-cdk-prod-1Key/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::KMS::Key",
                   "aws:cdk:cloudformation:props": {
@@ -1481,7 +1481,7 @@
                                   {
                                     "Ref": "AWS::Partition"
                                   },
-                                  ":iam::754398815384:root"
+                                  ":iam::850674240322:root"
                                 ]
                               ]
                             }
@@ -1499,12 +1499,12 @@
                           ],
                           "Condition": {
                             "ArnLike": {
-                              "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:eu-central-1:754398815384:*"
+                              "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:us-east-1:850674240322:*"
                             }
                           },
                           "Effect": "Allow",
                           "Principal": {
-                            "Service": "logs.eu-central-1.amazonaws.com"
+                            "Service": "logs.us-east-1.amazonaws.com"
                           },
                           "Resource": "*"
                         }
@@ -1516,23 +1516,23 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-kms.CfnKey",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               },
               "Alias": {
                 "id": "Alias",
-                "path": "MWAA-Environment/mwaa-cdk-demo3434Key/Alias",
+                "path": "MWAA-Environment/mwaa-cdk-prod-1Key/Alias",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "MWAA-Environment/mwaa-cdk-demo3434Key/Alias/Resource",
+                    "path": "MWAA-Environment/mwaa-cdk-prod-1Key/Alias/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::KMS::Alias",
                       "aws:cdk:cloudformation:props": {
-                        "aliasName": "alias/mwaa-cdk-demo3434Key",
+                        "aliasName": "alias/mwaa-cdk-prod-1Key",
                         "targetKeyId": {
                           "Fn::GetAtt": [
-                            "mwaacdkdemo3434Key0DD00138",
+                            "mwaacdkprod1KeyA03123E8",
                             "Arn"
                           ]
                         }
@@ -1540,19 +1540,19 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-kms.CfnAlias",
-                      "version": "1.156.1"
+                      "version": "1.159.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-kms.Alias",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-kms.Key",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "airflow-test-environment": {
@@ -1561,7 +1561,7 @@
             "attributes": {
               "aws:cdk:cloudformation:type": "AWS::MWAA::Environment",
               "aws:cdk:cloudformation:props": {
-                "name": "mwaa-cdk-demo3434",
+                "name": "mwaa-cdk-prod-1",
                 "airflowConfigurationOptions": {
                   "core.default_timezone": "utc"
                 },
@@ -1576,7 +1576,7 @@
                 },
                 "kmsKey": {
                   "Fn::GetAtt": [
-                    "mwaacdkdemo3434Key0DD00138",
+                    "mwaacdkprod1KeyA03123E8",
                     "Arn"
                   ]
                 },
@@ -1632,7 +1632,7 @@
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-mwaa.CfnEnvironment",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "MWAASecurityGroup": {
@@ -1640,7 +1640,7 @@
             "path": "MWAA-Environment/MWAASecurityGroup",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           },
           "CDKMetadata": {
@@ -1652,25 +1652,25 @@
                 "path": "MWAA-Environment/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.156.1"
+                  "version": "1.159.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.156.1"
+              "version": "1.159.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.156.1"
+          "version": "1.159.0"
         }
       }
     },
     "constructInfo": {
       "fqn": "@aws-cdk/core.App",
-      "version": "1.156.1"
+      "version": "1.159.0"
     }
   }
 }

@@ -24,7 +24,7 @@
     "VpcId": {
      "Ref": "MWAAApacheAirflowVPCB5BDED9D"
     },
-    "AvailabilityZone": "eu-central-1a",
+    "AvailabilityZone": "us-east-1a",
     "CidrBlock": "10.192.0.0/24",
     "MapPublicIpOnLaunch": true,
     "Tags": [
@@ -139,7 +139,7 @@
     "VpcId": {
      "Ref": "MWAAApacheAirflowVPCB5BDED9D"
     },
-    "AvailabilityZone": "eu-central-1b",
+    "AvailabilityZone": "us-east-1b",
     "CidrBlock": "10.192.1.0/24",
     "MapPublicIpOnLaunch": true,
     "Tags": [
@@ -216,7 +216,7 @@
     "VpcId": {
      "Ref": "MWAAApacheAirflowVPCB5BDED9D"
     },
-    "AvailabilityZone": "eu-central-1a",
+    "AvailabilityZone": "us-east-1a",
     "CidrBlock": "10.192.2.0/24",
     "MapPublicIpOnLaunch": false,
     "Tags": [
@@ -290,7 +290,7 @@
     "VpcId": {
      "Ref": "MWAAApacheAirflowVPCB5BDED9D"
     },
-    "AvailabilityZone": "eu-central-1b",
+    "AvailabilityZone": "us-east-1b",
     "CidrBlock": "10.192.3.0/24",
     "MapPublicIpOnLaunch": false,
     "Tags": [
@@ -389,7 +389,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/0WPTw+CMAzFPwv3OUSj8SghxnDRBQ33UWucfzaydRJD+O4yFTn11/demzbhyWLJk2gtGzeB0y1uwVjk7YEk3FiBzngLyLKz3nuqPbHMaEfWAwVt8DsWxhFmvC1rCE4pMiZ8dVdw8JXGT3qkwnjCo6zuOOqjljpnQElSRv/DATa5CGUnaSsJG/liwqpnj+PiXBPanofA95Jfl1L/1OWBmrqOiRddjI7nfMWTaXR1Sk2s16QeyItvfQNaHlD3GwEAAA=="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/0WPQQ+CMAyFf4v3OUFjojcNMcaLLmC8j1rDBDazdRpC+O8yUTn163uvTRvzeLnm0WQjX24K13LWgrHI24wklCxFZ7wFZMlNnzw9PLHEaEfWAwXt53csjCPMeXt5QHAuImHC55WCzOcaP+mRUuMJzzKvcNRHbeucASVJGf0PB9gdRChHSXtJ+JINE1Y9exwXHzSh7fkXGC75dlvqnypq1NR1TDRUGD1b8BWPo8ndKTW1XpOqkadDfQMD05IrGwEAAA=="
    },
    "Metadata": {
     "aws:cdk:path": "MWAA-Backend/CDKMetadata/Default"
@@ -403,7 +403,7 @@
     "Ref": "MWAAApacheAirflowVPCB5BDED9D"
    },
    "Export": {
-    "Name": "eu-central-1:754398815384:MWAA-Backend:vpc-id"
+    "Name": "us-east-1:850674240322:MWAA-Backend:vpc-id"
    }
   },
   "ExportsOutputRefMWAAApacheAirflowVPCB5BDED9D45FBF85F": {

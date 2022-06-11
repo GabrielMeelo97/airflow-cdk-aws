@@ -3,7 +3,7 @@
   "mwaadags537631EF": {
    "Type": "AWS::S3::Bucket",
    "Properties": {
-    "BucketName": "airflow-cdk-demo-09349084459",
+    "BucketName": "airflow-cdk-dags-gabriel",
     "PublicAccessBlockConfiguration": {
      "BlockPublicAcls": true,
      "BlockPublicPolicy": true,
@@ -17,7 +17,7 @@
      },
      {
       "Key": "env",
-      "Value": "mwaa-cdk-demo3434"
+      "Value": "mwaa-cdk-prod-1"
      },
      {
       "Key": "service",
@@ -39,7 +39,7 @@
    "Properties": {
     "Content": {
      "S3Bucket": {
-      "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207"
+      "Ref": "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3Bucket8513C222"
      },
      "S3Key": {
       "Fn::Join": [
@@ -52,7 +52,7 @@
            "Fn::Split": [
             "||",
             {
-             "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA"
+             "Ref": "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3VersionKeyDF2A43EA"
             }
            ]
           }
@@ -65,7 +65,7 @@
            "Fn::Split": [
             "||",
             {
-             "Ref": "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA"
+             "Ref": "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3VersionKeyDF2A43EA"
             }
            ]
           }
@@ -79,7 +79,7 @@
    },
    "Metadata": {
     "aws:cdk:path": "MWAA-Environment/DeployDAG/AwsCliLayer/Resource",
-    "aws:asset:path": "asset.e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c.zip",
+    "aws:asset:path": "asset.02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557.zip",
     "aws:asset:is-bundled": false,
     "aws:asset:property": "Content"
    }
@@ -95,7 +95,7 @@
     },
     "SourceBucketNames": [
      {
-      "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+      "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3BucketC240AE28"
      }
     ],
     "SourceObjectKeys": [
@@ -110,7 +110,7 @@
            "Fn::Split": [
             "||",
             {
-             "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A"
+             "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3VersionKey934766AF"
             }
            ]
           }
@@ -123,7 +123,7 @@
            "Fn::Split": [
             "||",
             {
-             "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A"
+             "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3VersionKey934766AF"
             }
            ]
           }
@@ -203,7 +203,7 @@
            },
            ":s3:::",
            {
-            "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+            "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3BucketC240AE28"
            }
           ]
          ]
@@ -218,7 +218,7 @@
            },
            ":s3:::",
            {
-            "Ref": "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB"
+            "Ref": "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3BucketC240AE28"
            },
            "/*"
           ]
@@ -370,7 +370,7 @@
         {
          "Action": "airflow:PublishMetrics",
          "Effect": "Allow",
-         "Resource": "arn:aws:airflow:eu-central-1:754398815384:environment/mwaa-cdk-demo3434"
+         "Resource": "arn:aws:airflow:us-east-1:850674240322:environment/mwaa-cdk-prod-1"
         },
         {
          "Action": "s3:ListAllMyBuckets",
@@ -436,7 +436,7 @@
           "logs:DescribeLogGroups"
          ],
          "Effect": "Allow",
-         "Resource": "arn:aws:logs:eu-central-1:754398815384:log-group:airflow-mwaa-cdk-demo3434-*"
+         "Resource": "arn:aws:logs:us-east-1:850674240322:log-group:airflow-mwaa-cdk-prod-1-*"
         },
         {
          "Action": "logs:DescribeLogGroups",
@@ -453,7 +453,7 @@
           "sqs:SendMessage"
          ],
          "Effect": "Allow",
-         "Resource": "arn:aws:sqs:eu-central-1:*:airflow-celery-*"
+         "Resource": "arn:aws:sqs:us-east-1:*:airflow-celery-*"
         },
         {
          "Action": [
@@ -466,8 +466,8 @@
          "Condition": {
           "StringEquals": {
            "kms:ViaService": [
-            "sqs.eu-central-1.amazonaws.com",
-            "s3.eu-central-1.amazonaws.com"
+            "sqs.us-east-1.amazonaws.com",
+            "s3.us-east-1.amazonaws.com"
            ]
           }
          },
@@ -527,7 +527,7 @@
     "aws:cdk:path": "MWAA-Environment/mwaa-sg/from MWAAEnvironmentmwaasg58F76CDF:ALL TRAFFIC"
    }
   },
-  "mwaacdkdemo3434Key0DD00138": {
+  "mwaacdkprod1KeyA03123E8": {
    "Type": "AWS::KMS::Key",
    "Properties": {
     "KeyPolicy": {
@@ -559,7 +559,7 @@
            {
             "Ref": "AWS::Partition"
            },
-           ":iam::754398815384:root"
+           ":iam::850674240322:root"
           ]
          ]
         }
@@ -577,12 +577,12 @@
        ],
        "Condition": {
         "ArnLike": {
-         "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:eu-central-1:754398815384:*"
+         "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:us-east-1:850674240322:*"
         }
        },
        "Effect": "Allow",
        "Principal": {
-        "Service": "logs.eu-central-1.amazonaws.com"
+        "Service": "logs.us-east-1.amazonaws.com"
        },
        "Resource": "*"
       }
@@ -594,28 +594,28 @@
    "UpdateReplacePolicy": "Retain",
    "DeletionPolicy": "Retain",
    "Metadata": {
-    "aws:cdk:path": "MWAA-Environment/mwaa-cdk-demo3434Key/Resource"
+    "aws:cdk:path": "MWAA-Environment/mwaa-cdk-prod-1Key/Resource"
    }
   },
-  "mwaacdkdemo3434KeyAlias83073F87": {
+  "mwaacdkprod1KeyAlias3C897C8C": {
    "Type": "AWS::KMS::Alias",
    "Properties": {
-    "AliasName": "alias/mwaa-cdk-demo3434Key",
+    "AliasName": "alias/mwaa-cdk-prod-1Key",
     "TargetKeyId": {
      "Fn::GetAtt": [
-      "mwaacdkdemo3434Key0DD00138",
+      "mwaacdkprod1KeyA03123E8",
       "Arn"
      ]
     }
    },
    "Metadata": {
-    "aws:cdk:path": "MWAA-Environment/mwaa-cdk-demo3434Key/Alias/Resource"
+    "aws:cdk:path": "MWAA-Environment/mwaa-cdk-prod-1Key/Alias/Resource"
    }
   },
   "airflowtestenvironment": {
    "Type": "AWS::MWAA::Environment",
    "Properties": {
-    "Name": "mwaa-cdk-demo3434",
+    "Name": "mwaa-cdk-prod-1",
     "AirflowConfigurationOptions": {
      "core.default_timezone": "utc",
      "core.load_default_connections": false,
@@ -634,7 +634,7 @@
     },
     "KmsKey": {
      "Fn::GetAtt": [
-      "mwaacdkdemo3434Key0DD00138",
+      "mwaacdkprod1KeyA03123E8",
       "Arn"
      ]
     },
@@ -686,7 +686,7 @@
      ]
     },
     "Tags": {
-     "env": "mwaa-cdk-demo3434",
+     "env": "mwaa-cdk-prod-1",
      "service": "MWAA Apache AirFlow"
     },
     "WebserverAccessMode": "PUBLIC_ONLY"
@@ -698,7 +698,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/32Qy04DMQxFv6X7jMtQgVjSlocQSFStxD5kTAmTRxU7VKMo/04yQ8uO1T2+tixft9BeXUM7u5VHalTXz5PyASHtWKpeLImQC+6124t1JPZ2i+RjUCjWH+6PvSMOUXF1NzJIi4yhFq+RD5GzqOsTLSCtoupxnPulSVaSMAtaNKnDg/GDRccwte7OhpD1HoLxrCyMtO+dhFR2vcgBwxsG0t6JXbnWIHv3EJ3i6pyhjJ44Cy0tpK03U5aqG2+0GsYQI2WB6rI8A1UMmofH4OOhdv83ntw+IFEWvSVIzzgurLI0WlItRsjCHqWEUt67bx28qxFPqRpTEzXlbcpoWB5pbfQYMovNwJ/ezRdwA+3F7Iu0bkJ0rC3CdtIfpPXX2NUBAAA="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/32Qy04DMQxFv4V9xm2pkGBHWx5CIFG1EvuQmhImjyp2qEZR/p0kQ8uO1T2+tixfz2B2dQPTi1t5pE7t+klSPiCkLUvViwURcsG9dnuxisTebpB8DArF6sP9sXfEISqu7loGaZEx1OI18iFyFnV9ojmkZVQ9trlfGmUpCbOgeZd2eDB+sOgYxtbd2RCy3kPQzsrCSPu+k5DKrhc5YHjDQNo7sS3XGmTvHqJTXJ0zlNETZ6GlhbTxZsxSde2NVkML0SgLVJflGahi0Dw8Bh8Ptfu/8eT2AYmy6C1Besa2sMrCaEm1aJCFPUoJpbx33zp4VyOeUnWmJurK25TRsDjSyugWMov1wJ/eTeZwDbPpxRdp3YXoWFuEzag/0aCqd9UBAAA="
    },
    "Metadata": {
     "aws:cdk:path": "MWAA-Environment/CDKMetadata/Default"
@@ -706,17 +706,17 @@
   }
  },
  "Parameters": {
-  "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3BucketE2407207": {
+  "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3Bucket8513C222": {
    "Type": "String",
-   "Description": "S3 bucket for asset \"e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c\""
+   "Description": "S3 bucket for asset \"02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557\""
   },
-  "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cS3VersionKey0667D5EA": {
+  "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557S3VersionKeyDF2A43EA": {
    "Type": "String",
-   "Description": "S3 key for asset version \"e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c\""
+   "Description": "S3 key for asset version \"02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557\""
   },
-  "AssetParameterse6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2cArtifactHash07A347C7": {
+  "AssetParameters02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557ArtifactHash89001C28": {
    "Type": "String",
-   "Description": "Artifact hash for asset \"e6b3c8169ff937ea363b0bb4d13b24b0a38c958c42318f72066e3e59f0148c2c\""
+   "Description": "Artifact hash for asset \"02927fd0ce5bb130cbc8d11f17469e74496526efe5186a9ab36e8a8138e9a557\""
   },
   "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7": {
    "Type": "String",
@@ -730,17 +730,17 @@
    "Type": "String",
    "Description": "Artifact hash for asset \"f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da\""
   },
-  "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3BucketD9A5B5EB": {
+  "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3BucketC240AE28": {
    "Type": "String",
-   "Description": "S3 bucket for asset \"91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560\""
+   "Description": "S3 bucket for asset \"8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83\""
   },
-  "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560S3VersionKeyFEAE856A": {
+  "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83S3VersionKey934766AF": {
    "Type": "String",
-   "Description": "S3 key for asset version \"91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560\""
+   "Description": "S3 key for asset version \"8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83\""
   },
-  "AssetParameters91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560ArtifactHashBDF2DF1B": {
+  "AssetParameters8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83ArtifactHash3DD61A60": {
    "Type": "String",
-   "Description": "Artifact hash for asset \"91ab667f7c88c3b87cf958b7ef4158ef85fb9ba8bd198e5e0e901bb7f904d560\""
+   "Description": "Artifact hash for asset \"8d36b0d7be8b74e8d3ab5763a3ce02ce8aa7468a481e1496ae9cdf9a74981a83\""
   }
  },
  "Outputs": {
