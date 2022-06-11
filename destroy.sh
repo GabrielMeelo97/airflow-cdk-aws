@@ -1,2 +1,2 @@
-cdk destroy MWAA-Backend
-cdk destroy MWAA-Environment
+cdk destroy MWAA-Backend -y
+cdk destroy MWAA-Environment -y
